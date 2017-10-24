@@ -2,7 +2,7 @@
     "kind": "Service",
     "apiVersion": "v1",
     "metadata": {
-        "name": "my-service"
+        "name": "my-service2"
     },
     "spec": {
         "selector": {
@@ -12,7 +12,7 @@
             {
                 "protocol": "TCP",
                 "port": 80,
-                "targetPort": 9376
+                "targetPort": 1992
             }
         ]
     }

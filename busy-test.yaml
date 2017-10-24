@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata: 
+  name: busytest
+spec: 
+  replicas: 3
+  template: 
+    metadata: 
+      labels: 
+        app: busytest
+    spec: 
+      containers: 
+        - 
+          env: 
+            - 
+              name: TEST_ENV
+              valueFrom: 
+                configMapKeyRef: 
+                  key: test.value
+                  name: special-config
+          image: "docker.io/shiywang/busytest:latest"
+          name: busytest
+          ports: ~
+

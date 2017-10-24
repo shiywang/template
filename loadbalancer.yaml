@@ -1,0 +1,7 @@
+kind: ThirdPartyResource
+apiVersion: extensions/v1beta1
+metadata:
+  name: loadbalancer.k8s.io
+description: "Allow user to curd a loadbalancer instance"
+versions:
+- name: v1
